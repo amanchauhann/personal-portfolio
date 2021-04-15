@@ -19,7 +19,9 @@
 <body>
     <div class="bg">
         <nav class="top-nav">
-            <div class="logo-container">RD</div>
+            <div class="logo-container">
+              RD
+            </div>
             <div class="menu-list__icon-container">
                 <a class="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -27,8 +29,9 @@
             </div>
             <ul class="menu-list">
                 <li class="cv-li">
-                    <a aria-label="CV on Google Drive" rel="noopener" target="_blank" href="https://drive.google.com/file/d/1j3ZPGKt1S62oKaBX-wNUeQ7nq0eIT4tB/view?usp=sharing"><i class="fas fa-download"></i>CV</a>
+                    <a aria-label="CV on Google Drive" rel="noopener" target="_blank" href="https://drive.google.com/file/d/1UCg3nZ0SKhmMeyRRmfo5g1HkAJsm84vM/view?usp=sharing"><i class="fas fa-download"></i>CV</a>
           </li>
+
           <li class="contact-li">
             <a
               aria-label="Link to Email"
@@ -56,15 +59,38 @@
         <div class="wrapper">
             <div class="heading-text-container">
                 <h2 class="heading-text1">Ruari Douglas,</h2>
-                <h2 class="heading-text2">Frontend Developer</h2>
+                <h2 class="heading-text2">Front end Developer</h2>
                 <div class="heading-line"></div>
+                <a class="read-more__link">About Me</a>
+                <section class="about">
+                  <p class="about__about-text about__about-text--heading">
+                    Studious JavaScript enthusiast.
+                </p>
+                <p class="about__about-text">
+                    Whilst I came into the industry a designer, I quickly discovered HTML and CSS. The creative in me wanted nothing more to say I am a designer but the logical, problem solver in me knew I was a developer at heart. Luckily for me, Front End Development exists
+                    and appeases both these sides.
+                </p>
+
+                <p class="about__about-text">
+                    My goal in this journey is fairly simple; to be a student for as long as it takes to become a teacher. To absorb as much as I can from those my senior and to become the best developer I can be. To work for a company using any of the Javascript frameworks
+                    would be a dream but honestly I relish the opportunity to learn anything new.
+                </p>
+                <p class="about__about-text">
+                    When I’m not coding, you can find me ‘slappin’ da bass’, strumming the guitar and exploring the South of France with my girlfriend.…Yes, I am looking to leave life on a vineyard in the South of France to become a developer in the UK. If that doesn’t show
+                    commitment, I don’t know what will.
+                </p>
+                <p class="about__about-text">
+                    If you’d like to find out more about me, don't hesitate to get in touch, all my details are available on my <a class="about__link" aria-label="CV on Google Drive" rel="noopener" target="_blank" href="https://drive.google.com/file/d/1UCg3nZ0SKhmMeyRRmfo5g1HkAJsm84vM/view?usp=sharing">CV right here</a>. If you can't wait to open my CV, you can reach me directly on <span class="about__link"></span> +33749030997.
+
+                </p>
+                <div class="heading-line"></div>
+                </section>
+
             </div>
             <div class="portfolio">
-                <!-- ENTRY -->
+
                 <div class="portfolio__entry">
-                    <div class="entry__title-container">
-                        <h2>React Guardian App</h2>
-                    </div>
+
                     <div class="entry__img-container">
                         <div class="shown-image">
                             <picture>
@@ -90,6 +116,7 @@
                         </div>
                     </div>
 
+
                     <div class="entry__right-container">
                         <div class="entry__link-container">
                             <a aria-label="React Guardian App" rel="noopener" target="_blank" class="entry-link__see-live" href="https://the-guardian-app-faeb0.web.app/">See Live</a>
@@ -102,8 +129,11 @@
                   >View Code</a
                 >
               </div>
+              <div class="entry__title-container">
+                <h2>React Guardian App</h2>
+            </div>
               <p class="entry__about-text">
-                A fully responsive react CRUD application using The Guardian News & Open Weather Map API with Firebase for Database, Auth and Hosting.
+                A fully responsive react CRUD application using The Guardian News & Open Weather Map API with Firebase for Database, Auth and Hosting. This app pulls headlines from all the main sections of The Guardian. Users are able to login and leave comments on all articles.
                 <br />
                 <br />
                 This app features:<br />
@@ -127,11 +157,9 @@
               </div>
             </div>
           </div>
-          <!-- ENTRY 2 -->
+
           <div class="portfolio__entry">
-            <div class="entry__title-container">
-              <h2>Shift Tracker</h2>
-            </div>
+
             <div class="entry__img-container">
               <div class="shown-image">
                 <picture>
@@ -157,6 +185,7 @@
             </div>
             </div>
 
+
             <div class="entry__right-container">
               <div class="entry__link-container">
                 <a
@@ -174,6 +203,9 @@
                   >View Code</a
                 >
               </div>
+              <div class="entry__title-container">
+                <h2>Shift Tracker</h2>
+              </div>
               <p class="entry__about-text">
                 A fully responsive back-end focussed CRUD project built with MongoDB, Express & Node. The application requires you to enter your work shift details, in turn through Javascript; exact hours are calculated and stored in the database and a total hours figure is displayed for each month.
                 <br />
@@ -184,7 +216,7 @@
                 - User authentication using passport local mongoose and MongoDb.
                 <br />
                 <br />
-                I built this for my partner who was spending too much time calculating her hours manually. 
+                Up until this point, my partner calculated all her hours with pen and paper so this was built to make her life easier.
               </p>
               <div class="entry__tools-container">
                 <i class="fab fa-node-js tool-icon2"></i>
@@ -199,7 +231,6 @@
             </div>
           </div>
         </div>
-        <!-- Portfolio End -->
       </div>
     </div>
   </body>

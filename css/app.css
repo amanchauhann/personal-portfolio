@@ -3,12 +3,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (min-width: 1300px) {
-  :root {
-    font-size: 22px;
-  }
-}
-
 .bg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,7 +95,37 @@
 .open {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  height: 5.1rem;
+  height: 5.2rem;
+}
+
+.about {
+  height: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.about__open {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  height: 38rem;
+  padding-top: 0.5rem;
+}
+
+.read-more__link {
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 9rem;
+  border: 2px solid #fff;
+  padding: 0.3rem 1rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.read-more__link:hover {
+  background-color: #fff;
+  color: #191919;
 }
 
 .side-nav {
@@ -196,9 +220,10 @@ i {
 }
 
 .entry__title-container h2 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  text-transform: uppercase;
 }
 
 .entry__img-container {
@@ -234,13 +259,13 @@ i {
 }
 
 .entry__link-container a {
+  font-size: 1rem;
   padding: 0.3rem 1rem;
   border: 3px solid #fff;
   width: 50%;
   text-align: center;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  text-transform: uppercase;
 }
 
 .entry__link-container a:first-of-type {
@@ -275,14 +300,49 @@ i {
   width: 1.6rem;
 }
 
-p.entry__about-text {
+.entry__about-text {
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 300;
   color: #fff;
 }
 
+.about__about-text {
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+
+.about__about-text--heading {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+}
+
+.about__link {
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.about__link:hover {
+  opacity: 0.6;
+}
+
+.about-wrapper {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .about__open {
+    height: 53rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .about__open {
+    height: 30rem;
+  }
   @-webkit-keyframes change {
     0% {
       content: "Contact";
@@ -592,6 +652,24 @@ p.entry__about-text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (min-width: 1300px) {
+  :root {
+    font-size: 22px;
+  }
+  .wrapper {
+    max-width: 90vw;
+  }
+  .entry__about-text,
+  .about__about-text,
+  .read-more__link,
+  .entry__link-container a {
+    font-size: 0.9rem;
+  }
+  .about__about-text--heading {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
