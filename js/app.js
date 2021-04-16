@@ -4,13 +4,16 @@ window.onbeforeunload = function () {
 
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector(".menu-list");
-const aboutSection = document.querySelector(".about");
-const readMore = document.querySelector(".read-more__link");
 const homeLink = document.querySelector(".home-link");
+const contactLink = document.querySelector(".contact-link");
+const readMore = document.querySelector(".read-more__link");
+const aboutSection = document.querySelector(".about");
 let toggle = false;
+
 menuIcon.addEventListener("click", (e) => {
   menuList.classList.toggle("open");
 });
+
 readMore.addEventListener("click", (e) => {
   aboutSection.classList.toggle("about__open");
   if (!toggle) {
@@ -21,8 +24,6 @@ readMore.addEventListener("click", (e) => {
     toggle = false;
   }
 });
-
-const emailLi = document.querySelector(".email-li");
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
