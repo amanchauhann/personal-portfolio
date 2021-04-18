@@ -182,7 +182,7 @@ i {
 .portfolio {
     padding: 1rem 0;
     &>div {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         border-bottom: 1px solid #434343;
     }
 }
@@ -481,8 +481,8 @@ i {
     .portfolio {
         display: flex;
         justify-content: space-between;
+        flex-flow: row wrap;
         &>div {
-            margin-bottom: 0;
             border-bottom: none;
         }
     }

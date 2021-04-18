@@ -215,7 +215,7 @@ i {
 }
 
 .portfolio > div {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #434343;
 }
 
@@ -612,9 +612,12 @@ i {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   .portfolio > div {
-    margin-bottom: 0;
     border-bottom: none;
   }
   .portfolio__entry {
