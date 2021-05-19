@@ -2,4 +2,4 @@
 
 A personal portfolio showcasing my projects. Animations added through GSAP.
 
-View the live site
+**[View the live site](https://ruaridouglas.com/)**
